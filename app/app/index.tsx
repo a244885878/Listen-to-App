@@ -1,9 +1,16 @@
-import { Text, View } from "react-native";
+import { View, StyleSheet } from "react-native";
+import TabBar from "../components/TabBar";
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+});
 
 const Index = () => {
   return (
-    <View>
-      <Text> Index </Text>
+    <View style={styles.container}>
+      <TabBar />
     </View>
   );
 };

@@ -1,14 +1,8 @@
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Button, Toast } from "@ant-design/react-native";
-import { usePlayerStore } from "../../../stores/usePlayerStore";
-
-const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: "#fff" },
-  content: { flex: 1, alignItems: "center", justifyContent: "center" },
-  title: { fontSize: 24, fontWeight: "600", marginBottom: 8 },
-  subtitle: { fontSize: 14, color: "#666" },
-});
+import { usePlayerStore } from "@/stores/usePlayerStore";
+import { styles } from "@/styles/home";
 
 export default function HomeScreen() {
   const { isPlaying, setPlaying } = usePlayerStore();

@@ -9,10 +9,10 @@ export default function TabLayout() {
         tabBarInactiveTintColor: '#999',
         headerShown: false,
       }}
-      initialRouteName="index/index"
+      initialRouteName="index"
     >
       <Tabs.Screen
-        name="index/index"
+        name="index"
         options={{
           title: '首页',
           tabBarIcon: ({ color, size }) => (
@@ -21,7 +21,7 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="music/index"
+        name="music"
         options={{
           title: '音乐馆',
           tabBarIcon: ({ color, size }) => (
@@ -30,7 +30,7 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="me/index"
+        name="me"
         options={{
           title: '我的',
           tabBarIcon: ({ color, size }) => (

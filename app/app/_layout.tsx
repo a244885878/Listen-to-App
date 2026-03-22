@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 import { Provider } from '@ant-design/react-native';
 import { StatusBar } from 'expo-status-bar';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
-import { useUserStore } from '../stores/useUserStore';
+import { useUserStore } from '@/stores/useUserStore';
 
 // 阻止启动图自动隐藏，等字体和登录状态恢复完成后再关闭
 SplashScreen.preventAutoHideAsync();
